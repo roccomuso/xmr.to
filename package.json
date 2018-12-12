@@ -1,0 +1,44 @@
+{
+  "name": "xmr.to",
+  "version": "1.0.0",
+  "description": "Xmr.to API javascript client",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint && npm run unit",
+    "lint": "standard",
+    "unit": "tape test/*.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roccomuso/xmr.to.git"
+  },
+  "keywords": [
+    "xmr.to",
+    "crypto",
+    "client",
+    "api",
+    "exchange",
+    "asset",
+    "monero",
+    "xmr",
+    "bitcoin"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "author": "Rocco Musolino (@roccomuso)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roccomuso/xmr.to/issues"
+  },
+  "homepage": "https://github.com/roccomuso/xmr.to#readme",
+  "dependencies": {
+    "cross-fetch": "^2.2.3",
+    "debug": "^4.1.0"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
+  }
+}
