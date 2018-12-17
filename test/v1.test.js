@@ -62,6 +62,7 @@ test('.queryOrder(<uuid>): param required', (t) => {
 
 test('.queryOrder(<uuid>): param required', async (t) => {
   t.plan(14)
+  await delay(3e3)
   const res = await xmr.queryOrder(testUUID)
   t.equal(res.btc_dest_address, BTC_DEST_ADDRESS)
   createdOrderHasProperties(res, t)
