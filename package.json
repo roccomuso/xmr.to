@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/roccomuso/xmr.to#readme",
   "dependencies": {
-    "cross-fetch": "^2.2.3",
+    "cross-fetch": "^3.0.0",
     "debug": "^4.1.0"
   },
   "devDependencies": {
