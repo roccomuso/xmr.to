@@ -15,7 +15,7 @@ test('.getParams() returns information wether new orders can be created', (t) =>
   t.plan(5)
   const props = ['zero_conf_enabled', 'price', 'upper_limit', 'lower_limit', 'zero_conf_max_amount']
   xmr.getParams().then(res => {
-    props.map(key => t.ok(res.hasOwnProperty(key), `has "${key}" property`))
+    props.map(key => t.ok(key in res, `has "${key}" property`))
   })
 })
 
@@ -72,6 +72,6 @@ function createdOrderHasProperties (res, t) {
   // essential props:
   const props = ['xmr_recommended_mixin', 'created_at', 'xmr_receiving_address', 'btc_amount', 'btc_num_confirmations', 'xmr_receiving_integrated_address', 'expires_at', 'xmr_required_amount', 'state', 'xmr_amount_total', 'xmr_price_btc', 'uuid', 'xmr_num_confirmations_remaining']
   props.forEach(key => {
-    t.ok(res.hasOwnProperty(key), `got expected ${key} property`)
+    t.ok(key in res, `got expected ${key} property`)
   })
 }
